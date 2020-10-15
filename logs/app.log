@@ -1,0 +1,31 @@
+2020-10-15 22:25:38,922 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 9160 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-15 22:25:38,925 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-15 22:25:38,926 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-15 22:25:39,349 [main] WARN ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.middleware.server]' package. Please check your configuration.
+2020-10-15 22:25:39,579 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-15 22:25:39,651 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 685 ms
+2020-10-15 22:25:39,756 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-15 22:25:39,825 [main] WARN AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-10-15 22:25:39,825 [main] INFO ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-15 22:25:39,841 [main] INFO ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-15 22:25:39,846 [main] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
