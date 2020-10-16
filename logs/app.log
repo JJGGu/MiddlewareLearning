@@ -1,72 +1,12 @@
-2020-10-15 22:25:38,922 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 9160 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
-2020-10-15 22:25:38,925 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
-2020-10-15 22:25:38,926 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
-2020-10-15 22:25:39,349 [main] WARN ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.middleware.server]' package. Please check your configuration.
-2020-10-15 22:25:39,579 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
-2020-10-15 22:25:39,651 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 685 ms
-2020-10-15 22:25:39,756 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-15 22:25:39,825 [main] WARN AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
-2020-10-15 22:25:39,825 [main] INFO ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-15 22:25:39,841 [main] INFO ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-10-15 22:25:39,846 [main] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
-2020-10-15 22:32:55,916 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 6400 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
-2020-10-15 22:32:55,919 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
-2020-10-15 22:32:55,919 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
-2020-10-15 22:32:56,351 [main] WARN ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.middleware.server]' package. Please check your configuration.
-2020-10-15 22:32:56,586 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
-2020-10-15 22:32:56,658 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 704 ms
-2020-10-15 22:32:56,764 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-15 22:32:56,839 [main] ERROR HikariConfig - Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader sun.misc.Launcher$AppClassLoader@18b4aac2
-2020-10-15 22:32:56,842 [main] WARN AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource
-2020-10-15 22:32:56,842 [main] INFO ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-15 22:32:56,857 [main] INFO ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-10-15 22:32:56,860 [main] ERROR LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource:
-
-    Property: driver-class-name
-    Value: com.mysql.cj.jdbc.Driver
-    Origin: "driverClassName" from property source "source"
-    Reason: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
-
-Action:
-
-Update your application's configuration
-
-2020-10-15 22:33:27,417 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 6668 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
-2020-10-15 22:33:27,420 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
-2020-10-15 22:33:27,420 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
-2020-10-15 22:33:27,873 [main] WARN ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.middleware.server]' package. Please check your configuration.
-2020-10-15 22:33:28,108 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
-2020-10-15 22:33:28,182 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 718 ms
-2020-10-15 22:33:28,295 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-15 22:33:28,507 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
-2020-10-15 22:33:28,516 [main] INFO MainApplication - Started MainApplication in 1.408 seconds (JVM running for 2.542)
+2020-10-16 09:11:36,276 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 5320 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-16 09:11:36,281 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 09:11:36,281 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-16 09:11:36,811 [main] WARN ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.middleware.server]' package. Please check your configuration.
+2020-10-16 09:11:37,087 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-16 09:11:37,169 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 853 ms
+2020-10-16 09:11:37,284 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 09:11:37,521 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
+2020-10-16 09:11:37,529 [main] INFO MainApplication - Started MainApplication in 1.689 seconds (JVM running for 4.641)
+2020-10-16 09:14:41,857 [http-nio-8001-exec-4] INFO DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-16 09:14:41,863 [http-nio-8001-exec-4] INFO DispatcherServlet - Completed initialization in 5 ms
+2020-10-16 09:14:41,891 [http-nio-8001-exec-4] INFO BookController - bookNo: 1, name: ddd

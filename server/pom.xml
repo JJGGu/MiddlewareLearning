@@ -20,6 +20,7 @@
         <mysql.version>5.1.49</mysql.version>
     </properties>
 
+    <!--  只是对版本进行管理，并不会引入真正的jar  -->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -33,6 +34,11 @@
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
