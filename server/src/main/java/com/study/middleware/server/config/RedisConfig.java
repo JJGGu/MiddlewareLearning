@@ -34,11 +34,11 @@ public class RedisConfig {
     }
 
     // 缓存操作组件StringRedisTemplate
-    @Bean
-    public StringRedisTemplate stringRedisTemplate() {
-        // 采用默认配置，只需要配置连接工厂
-        StringRedisTemplate stringRedisTemplate = new StringRedisTemplate();
-        stringRedisTemplate.setConnectionFactory(redisConnectionFactory);
-        return stringRedisTemplate;
-    }
+//    @Bean
+//    public StringRedisTemplate stringRedisTemplate() {
+//        // 采用默认配置，只需要配置连接工厂
+//        StringRedisTemplate stringRedisTemplate = new StringRedisTemplate();
+//        stringRedisTemplate.setConnectionFactory(redisConnectionFactory);
+//        return stringRedisTemplate;
+//    }
 }
