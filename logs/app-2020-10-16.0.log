@@ -1,0 +1,60 @@
+2020-10-16 09:11:36,276 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 5320 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-16 09:11:36,281 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 09:11:36,281 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-16 09:11:36,811 [main] WARN ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.middleware.server]' package. Please check your configuration.
+2020-10-16 09:11:37,087 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-16 09:11:37,169 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 853 ms
+2020-10-16 09:11:37,284 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 09:11:37,521 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
+2020-10-16 09:11:37,529 [main] INFO MainApplication - Started MainApplication in 1.689 seconds (JVM running for 4.641)
+2020-10-16 09:14:41,857 [http-nio-8001-exec-4] INFO DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-16 09:14:41,863 [http-nio-8001-exec-4] INFO DispatcherServlet - Completed initialization in 5 ms
+2020-10-16 09:14:41,891 [http-nio-8001-exec-4] INFO BookController - bookNo: 1, name: ddd
+2020-10-16 15:11:31,665 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 1240 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-16 15:11:31,667 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 15:11:31,668 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-16 15:11:32,114 [main] INFO RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-16 15:11:32,116 [main] INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-16 15:11:32,129 [main] INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2020-10-16 15:11:32,188 [main] WARN ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.middleware.server]' package. Please check your configuration.
+2020-10-16 15:11:32,475 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-16 15:11:32,581 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 872 ms
+2020-10-16 15:11:32,899 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 15:11:33,189 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
+2020-10-16 15:11:33,195 [main] INFO MainApplication - Started MainApplication in 1.819 seconds (JVM running for 2.942)
+2020-10-16 15:11:47,383 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 24060 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-16 15:11:47,385 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 15:11:47,385 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-16 15:11:47,854 [main] INFO RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-16 15:11:47,856 [main] INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-16 15:11:47,874 [main] INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2020-10-16 15:11:47,942 [main] WARN ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.middleware.server]' package. Please check your configuration.
+2020-10-16 15:11:48,186 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-16 15:11:48,268 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 846 ms
+2020-10-16 15:11:48,581 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 15:11:48,853 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
+2020-10-16 15:11:48,859 [main] INFO MainApplication - Started MainApplication in 1.766 seconds (JVM running for 2.851)
+2020-10-16 15:12:09,801 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 13120 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-16 15:12:09,804 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 15:12:09,804 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-16 15:12:10,244 [main] INFO RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-16 15:12:10,245 [main] INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-16 15:12:10,259 [main] INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2020-10-16 15:12:10,320 [main] WARN ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.middleware.server]' package. Please check your configuration.
+2020-10-16 15:12:10,576 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-16 15:12:10,658 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 816 ms
+2020-10-16 15:12:10,965 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 15:12:11,265 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
+2020-10-16 15:12:11,273 [main] INFO MainApplication - Started MainApplication in 1.775 seconds (JVM running for 2.921)
+2020-10-16 15:14:20,223 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 22972 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-16 15:14:20,225 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 15:14:20,225 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-16 15:14:20,670 [main] INFO RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-16 15:14:20,671 [main] INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-16 15:14:20,685 [main] INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2020-10-16 15:14:20,745 [main] WARN ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.middleware.server]' package. Please check your configuration.
+2020-10-16 15:14:20,989 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-16 15:14:21,069 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 805 ms
+2020-10-16 15:14:21,372 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 15:14:21,648 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
+2020-10-16 15:14:21,654 [main] INFO MainApplication - Started MainApplication in 1.752 seconds (JVM running for 2.859)

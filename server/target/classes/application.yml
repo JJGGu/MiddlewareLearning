@@ -11,7 +11,7 @@ spring:
   jmx:
     enabled: false
   datasource:
-    url: jdbc:mysql://localhost:3306/middle
+    url: jdbc:mysql://localhost:3306/middleware
     username: root
     password: xuhaoranaaa.
     driver-class-name: com.mysql.jdbc.Driver
@@ -36,6 +36,4 @@ logging:
         middleware: DEBUG
   config: classpath:logback.xml
 
-# 数据库配置
-#Mybatis配置
 

@@ -1,6 +1,7 @@
 package com.study.middleware.server;
 
 import lombok.extern.slf4j.Slf4j;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -14,6 +15,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  **/
 @Slf4j
 @SpringBootApplication
+@MapperScan(basePackages = "com.study.middleware.model")
 public class MainApplication extends SpringBootServletInitializer {
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
