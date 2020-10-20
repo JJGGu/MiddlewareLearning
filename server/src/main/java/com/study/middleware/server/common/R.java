@@ -30,4 +30,9 @@ public final class R<T> {
         errorCode = code;
         errorMsg = msg;
     }
+
+    public R(StatusCode statusCode) {
+        errorCode = statusCode.getCode();
+        errorMsg = statusCode.getMsg();
+    }
 }

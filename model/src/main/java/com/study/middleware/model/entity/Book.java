@@ -1,4 +1,4 @@
-package com.study.middleware.server.entity;
+package com.study.middleware.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
