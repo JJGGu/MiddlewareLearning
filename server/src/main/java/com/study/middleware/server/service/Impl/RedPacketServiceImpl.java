@@ -81,23 +81,29 @@ public class RedPacketServiceImpl implements RedPacketService {
         }
         // 然后判断当前是否还有红包
         Boolean click = click(redPacketId);
+        String lockKey = redPacketId + userId +":lock";
         if (click) {
-            // 说明还有红包，那就开始拆红包
-            Object value = redisTemplate.opsForList().rightPop(redPacketId);
-            if (value != null) {
-                // 成功抢到了红包，更新缓存中的total
-                String totalKey = redPacketId + ":total";
-                Integer curValue = valueOperations.get(totalKey) == null ? 0 : (Integer)valueOperations.get(totalKey);
-                valueOperations.set(totalKey, curValue - 1);
+            // 由分布式锁判断该用户抢过了没有
+            Boolean absent = redisTemplate.opsForValue().setIfAbsent(lockKey, redPacketId, 24, TimeUnit.HOURS);
 
-                // 以元为单位返回给前端
-                BigDecimal result = new BigDecimal(value.toString()).divide(new BigDecimal(100));
-                // 将记录写入数据库
-                recordRobRedPacket(userId, redPacketId, result);
-                // 将该条记录写入缓存
-                valueOperations.set(redPacketId + ":" + userId + ":rob", result, 24, TimeUnit.HOURS);
-                log.info("抢到红包啦红包：userId: {}, amount: {}",userId, result);
-                return result;
+            // 说明还有红包，那就开始拆红包
+            if (absent) {
+                Object value = redisTemplate.opsForList().rightPop(redPacketId);
+                if (value != null) {
+                    // 成功抢到了红包，更新缓存中的total
+                    String totalKey = redPacketId + ":total";
+                    Integer curValue = valueOperations.get(totalKey) == null ? 0 : (Integer)valueOperations.get(totalKey);
+                    valueOperations.set(totalKey, curValue - 1);
+
+                    // 以元为单位返回给前端
+                    BigDecimal result = new BigDecimal(value.toString()).divide(new BigDecimal(100));
+                    // 将记录写入数据库
+                    recordRobRedPacket(userId, redPacketId, result);
+                    // 将该条记录写入缓存
+                    valueOperations.set(redPacketId + ":" + userId + ":rob", result, 24, TimeUnit.HOURS);
+                    log.info("抢到红包啦红包：absent: {}, userId: {}, amount: {}",absent, userId, result);
+                    return result;
+                }
             }
 
         }
