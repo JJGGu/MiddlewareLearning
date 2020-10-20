@@ -891,3 +891,599 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 2020-10-20 10:46:02,476 [http-nio-8001-exec-3] DEBUG insert - ==>  Preparing: INSERT INTO red_detail ( red_record_id, amount, create_time ) VALUES ( ?, ?, ? ) 
 2020-10-20 10:46:02,477 [http-nio-8001-exec-3] DEBUG insert - ==> Parameters: 1(Integer), 65(BigDecimal), 2020-10-20 10:46:02.476(Timestamp)
 2020-10-20 10:46:02,478 [http-nio-8001-exec-3] DEBUG insert - <==    Updates: 1
+2020-10-20 10:56:23,872 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 15580 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-20 10:56:23,875 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-20 10:56:23,876 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-20 10:56:24,340 [main] INFO RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-20 10:56:24,341 [main] INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-20 10:56:24,363 [main] INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-10-20 10:56:24,705 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-20 10:56:24,784 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 859 ms
+2020-10-20 10:56:26,234 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-20 10:56:26,432 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
+2020-10-20 10:56:26,439 [main] INFO MainApplication - Started MainApplication in 2.864 seconds (JVM running for 3.942)
+2020-10-20 10:56:33,573 [http-nio-8001-exec-1] INFO DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-20 10:56:33,578 [http-nio-8001-exec-1] INFO DispatcherServlet - Completed initialization in 5 ms
+2020-10-20 10:56:33,635 [http-nio-8001-exec-1] INFO RedPacketController - radpacketDto: RedPacketDto(userId=1, total=5, amount=100)
+2020-10-20 10:56:34,639 [http-nio-8001-exec-1] INFO RedPacketServiceImpl - redPacketId: redis:red:packet:1:297924687545400, totalKey: redis:red:packet:1:297924687545400:total
+2020-10-20 10:56:34,802 [http-nio-8001-exec-1] DEBUG insert - ==>  Preparing: INSERT INTO red_record ( user_id, red_packet_id, total, amount, create_time ) VALUES ( ?, ?, ?, ?, ? ) 
+2020-10-20 10:56:34,816 [http-nio-8001-exec-1] DEBUG insert - ==> Parameters: 1(Integer), redis:red:packet:1:297924687545400(String), 5(Integer), 100(BigDecimal), 2020-10-20 10:56:34.642(Timestamp)
+2020-10-20 10:56:34,818 [http-nio-8001-exec-1] DEBUG insert - <==    Updates: 1
+2020-10-20 10:56:34,825 [http-nio-8001-exec-1] DEBUG insert - ==>  Preparing: INSERT INTO red_detail ( red_record_id, amount, create_time ) VALUES ( ?, ?, ? ) 
+2020-10-20 10:56:34,825 [http-nio-8001-exec-1] DEBUG insert - ==> Parameters: 2(Integer), 6(BigDecimal), 2020-10-20 10:56:34.822(Timestamp)
+2020-10-20 10:56:34,827 [http-nio-8001-exec-1] DEBUG insert - <==    Updates: 1
+2020-10-20 10:56:34,828 [http-nio-8001-exec-1] DEBUG insert - ==>  Preparing: INSERT INTO red_detail ( red_record_id, amount, create_time ) VALUES ( ?, ?, ? ) 
+2020-10-20 10:56:34,828 [http-nio-8001-exec-1] DEBUG insert - ==> Parameters: 2(Integer), 5(BigDecimal), 2020-10-20 10:56:34.828(Timestamp)
+2020-10-20 10:56:34,830 [http-nio-8001-exec-1] DEBUG insert - <==    Updates: 1
+2020-10-20 10:56:34,831 [http-nio-8001-exec-1] DEBUG insert - ==>  Preparing: INSERT INTO red_detail ( red_record_id, amount, create_time ) VALUES ( ?, ?, ? ) 
+2020-10-20 10:56:34,831 [http-nio-8001-exec-1] DEBUG insert - ==> Parameters: 2(Integer), 57(BigDecimal), 2020-10-20 10:56:34.831(Timestamp)
+2020-10-20 10:56:34,833 [http-nio-8001-exec-1] DEBUG insert - <==    Updates: 1
+2020-10-20 10:56:34,833 [http-nio-8001-exec-1] DEBUG insert - ==>  Preparing: INSERT INTO red_detail ( red_record_id, amount, create_time ) VALUES ( ?, ?, ? ) 
+2020-10-20 10:56:34,834 [http-nio-8001-exec-1] DEBUG insert - ==> Parameters: 2(Integer), 23(BigDecimal), 2020-10-20 10:56:34.833(Timestamp)
+2020-10-20 10:56:34,835 [http-nio-8001-exec-1] DEBUG insert - <==    Updates: 1
+2020-10-20 10:56:34,836 [http-nio-8001-exec-1] DEBUG insert - ==>  Preparing: INSERT INTO red_detail ( red_record_id, amount, create_time ) VALUES ( ?, ?, ? ) 
+2020-10-20 10:56:34,836 [http-nio-8001-exec-1] DEBUG insert - ==> Parameters: 2(Integer), 9(BigDecimal), 2020-10-20 10:56:34.835(Timestamp)
+2020-10-20 10:56:34,838 [http-nio-8001-exec-1] DEBUG insert - <==    Updates: 1
+2020-10-20 12:04:34,146 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:04:40,425 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:04:46,725 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:04:53,826 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:05:01,025 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:05:07,224 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:05:17,427 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:05:35,824 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:06:07,923 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:06:40,025 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:07:12,123 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:07:44,229 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:08:16,333 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:08:48,423 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:09:20,524 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:09:52,624 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:10:24,722 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:10:56,824 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:11:28,925 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:12:01,024 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:12:33,126 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:13:05,223 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:13:37,335 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:14:09,424 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:14:41,525 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:15:13,622 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:15:45,724 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:16:17,822 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:16:49,923 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:17:22,023 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:17:54,123 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:18:26,224 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:18:58,325 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:19:30,422 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:20:02,534 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:20:34,628 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:21:06,733 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:21:38,825 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:22:10,925 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:22:43,023 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:23:15,124 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:23:47,223 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:24:19,334 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:24:51,424 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:25:23,522 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:25:55,628 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:26:27,723 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:26:59,823 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:27:31,924 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:28:04,023 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:28:36,123 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:29:08,225 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:29:40,325 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:30:12,423 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:30:44,529 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:31:16,626 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:31:48,734 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:32:20,823 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:32:52,924 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:33:25,025 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:33:57,125 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:34:29,224 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:35:01,324 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:35:33,422 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:36:05,523 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:36:37,624 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:37:09,724 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:37:41,822 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:38:13,927 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:38:46,025 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:39:18,123 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:39:50,233 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:40:22,324 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:40:54,425 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:41:26,522 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:41:58,625 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:42:30,723 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:43:02,825 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:43:34,924 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:44:07,023 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:44:39,129 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:45:11,223 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:45:43,325 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:46:15,422 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:46:47,535 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:47:19,624 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:47:51,727 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:48:23,826 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:48:55,923 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:49:28,036 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:50:00,123 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:50:32,224 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:51:04,323 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:51:36,424 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:52:08,524 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:52:40,623 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:53:12,733 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:53:44,823 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:54:16,923 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:54:49,023 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:55:21,125 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:55:53,223 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:56:25,323 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:56:57,425 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:57:29,525 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:58:01,622 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:58:33,723 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:59:05,823 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 12:59:37,923 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:00:10,026 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:00:42,135 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:01:14,224 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:01:46,322 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:02:18,425 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:02:50,525 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:03:22,623 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:03:54,725 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:04:26,824 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:04:58,923 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:05:31,026 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:06:03,123 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:06:35,224 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:07:07,323 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:07:39,422 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:08:11,525 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:08:43,624 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:09:15,734 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:09:47,824 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:10:19,922 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:10:52,023 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:11:24,134 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:11:56,224 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:12:28,323 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:13:00,425 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:13:32,522 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:14:04,624 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:14:36,733 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:15:08,824 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:15:40,924 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:16:13,024 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:16:45,123 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:17:17,222 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:17:49,323 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:18:21,423 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:18:53,535 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:19:25,626 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:19:57,736 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:20:29,824 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:21:01,925 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:21:34,025 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:22:06,123 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:22:38,224 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:23:10,323 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:23:42,423 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:24:14,522 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:24:46,623 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:25:18,725 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:25:50,835 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:26:22,923 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:26:55,022 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:27:27,125 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:27:59,225 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:28:31,323 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:29:03,426 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:29:35,524 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:30:07,624 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:30:39,734 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:31:11,823 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:31:43,923 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:32:16,026 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:32:48,133 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:33:20,225 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:33:52,324 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:34:24,436 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:34:56,524 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:35:28,624 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:36:00,725 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:36:32,835 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:37:04,924 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:37:37,025 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:38:09,126 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:38:41,225 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:39:13,323 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:39:45,424 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:40:17,525 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:40:49,623 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:41:21,723 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:41:53,833 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:42:25,923 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:42:58,023 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:43:30,129 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:44:02,224 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:44:34,324 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:45:06,423 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:45:38,523 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:46:10,624 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:46:42,725 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:47:14,823 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:47:46,924 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:48:19,024 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:48:51,129 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:49:23,225 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:49:55,322 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:50:27,425 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:50:59,523 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:51:31,639 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:52:03,726 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:52:35,823 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:53:07,922 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:53:40,024 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:54:12,125 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:54:44,234 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:55:16,324 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:55:48,424 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:56:20,524 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:56:52,625 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:57:24,734 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:57:56,823 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:58:28,932 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:59:01,024 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 13:59:33,124 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:00:05,238 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:00:37,322 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:01:09,423 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:01:41,524 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:02:13,624 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:02:45,724 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:03:17,826 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:03:49,933 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:04:22,025 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:04:54,128 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:05:26,224 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:05:58,323 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:06:30,425 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:07:02,533 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:07:34,625 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:08:06,721 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:08:38,824 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:09:10,923 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:09:43,025 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:10:15,136 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:10:47,224 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:11:19,323 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:11:51,425 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:12:23,522 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:12:55,628 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:13:27,723 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:13:59,824 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:14:31,925 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:15:04,036 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:15:36,133 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:16:08,223 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:16:40,323 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:17:12,425 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:17:44,533 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:18:16,623 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:18:48,725 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:19:20,834 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:19:52,924 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:20:25,027 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:20:57,122 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:21:29,224 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:22:01,323 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:22:33,423 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:23:05,523 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:23:37,625 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:24:09,723 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:24:41,824 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:25:13,937 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:25:46,023 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:26:18,128 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:26:50,223 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:27:22,336 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:27:54,425 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:28:26,535 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:28:58,624 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:29:30,725 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:30:02,825 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:30:34,923 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:31:07,023 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:31:39,134 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:32:11,234 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:32:43,323 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:33:15,422 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:33:47,525 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:34:19,623 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:34:51,723 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:35:23,822 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:35:55,923 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:36:28,023 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:37:00,124 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:37:32,223 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:38:04,333 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:38:36,425 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:39:08,523 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:39:40,624 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:40:12,723 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:40:44,823 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:41:16,923 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:41:49,024 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:42:21,123 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:42:53,246 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:43:25,323 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:43:57,435 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:44:29,524 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:45:01,622 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:45:33,722 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:46:05,825 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:46:37,937 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:47:10,023 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:47:42,124 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:48:14,223 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:48:46,324 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:49:18,424 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:49:50,524 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:50:22,644 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:50:54,723 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:51:26,828 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:51:58,924 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:52:31,022 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:53:03,126 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:53:35,235 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:54:07,323 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:54:39,434 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:55:11,522 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:55:43,625 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:56:15,728 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:56:47,823 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:57:19,922 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:57:52,023 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:58:24,123 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:58:56,223 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 14:59:28,323 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:00:00,423 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:00:32,523 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:01:04,624 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:01:36,735 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:02:08,832 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:02:40,923 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:03:13,023 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:03:45,124 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:04:17,224 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:04:49,322 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:05:21,421 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:05:53,524 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:06:25,627 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:06:57,724 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:07:29,823 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:08:01,923 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:08:34,024 [lettuce-nioEventLoop-4-10] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:09:06,124 [lettuce-nioEventLoop-4-11] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:09:38,223 [lettuce-nioEventLoop-4-12] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:10:10,324 [lettuce-nioEventLoop-4-1] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:10:42,426 [lettuce-nioEventLoop-4-2] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:11:14,525 [lettuce-nioEventLoop-4-3] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:11:46,624 [lettuce-nioEventLoop-4-4] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:12:18,725 [lettuce-nioEventLoop-4-5] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:12:50,824 [lettuce-nioEventLoop-4-6] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:13:22,925 [lettuce-nioEventLoop-4-7] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:13:55,022 [lettuce-nioEventLoop-4-8] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 15:14:27,136 [lettuce-nioEventLoop-4-9] WARN ConnectionWatchdog - Cannot reconnect to [127.0.0.1:6379]: Connection refused: no further information: /127.0.0.1:6379
+2020-10-20 16:36:42,685 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 5692 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-20 16:36:42,706 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-20 16:36:42,707 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-20 16:36:43,354 [main] INFO RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-20 16:36:43,356 [main] INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-20 16:36:43,384 [main] INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-10-20 16:36:43,780 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-20 16:36:43,867 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1113 ms
+2020-10-20 16:36:45,393 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-20 16:36:45,609 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
+2020-10-20 16:36:45,616 [main] INFO MainApplication - Started MainApplication in 3.274 seconds (JVM running for 4.516)
+2020-10-20 16:38:35,688 [http-nio-8001-exec-1] INFO DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-20 16:38:35,693 [http-nio-8001-exec-1] INFO DispatcherServlet - Completed initialization in 4 ms
+2020-10-20 16:38:38,744 [http-nio-8001-exec-1] INFO RedPacketController - 抢红包发生异常：userId:1, redPacketId: redis:red:packet:1:297293295720200
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
+	at com.study.middleware.server.controller.redpacket.RedPacketController.rob(RedPacketController.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 127.0.0.1:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:242)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:206)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1440)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1228)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1211)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:975)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:360)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:134)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:97)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:84)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:215)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:53)
+	at com.study.middleware.server.service.Impl.RedPacketServiceImpl.rob(RedPacketServiceImpl.java:77)
+	at com.study.middleware.server.service.Impl.RedPacketServiceImpl$$FastClassBySpringCGLIB$$2642470.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687)
+	at com.study.middleware.server.service.Impl.RedPacketServiceImpl$$EnhancerBySpringCGLIB$$fb8bd228.rob(<generated>)
+	at com.study.middleware.server.controller.redpacket.RedPacketController.rob(RedPacketController.java:61)
+	... 50 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-20 16:39:13,624 [http-nio-8001-exec-3] INFO RedPacketServiceImpl - click redpacketId : redis:red:packet:1:297293295720200
+2020-10-20 16:40:40,410 [http-nio-8001-exec-6] INFO RedPacketController - radpacketDto: RedPacketDto(userId=1, total=5, amount=100)
+2020-10-20 16:40:40,414 [http-nio-8001-exec-6] INFO RedPacketServiceImpl - redPacketId: redis:red:packet:1:318571459405100, totalKey: redis:red:packet:1:318571459405100:total
+2020-10-20 16:40:40,595 [http-nio-8001-exec-6] DEBUG insert - ==>  Preparing: INSERT INTO red_record ( user_id, red_packet_id, total, amount, create_time ) VALUES ( ?, ?, ?, ?, ? ) 
+2020-10-20 16:40:40,609 [http-nio-8001-exec-6] DEBUG insert - ==> Parameters: 1(Integer), redis:red:packet:1:318571459405100(String), 5(Integer), 100(BigDecimal), 2020-10-20 16:40:40.415(Timestamp)
+2020-10-20 16:40:40,612 [http-nio-8001-exec-6] DEBUG insert - <==    Updates: 1
+2020-10-20 16:40:40,620 [http-nio-8001-exec-6] DEBUG insert - ==>  Preparing: INSERT INTO red_detail ( red_record_id, amount, create_time ) VALUES ( ?, ?, ? ) 
+2020-10-20 16:40:40,621 [http-nio-8001-exec-6] DEBUG insert - ==> Parameters: 3(Integer), 21(BigDecimal), 2020-10-20 16:40:40.618(Timestamp)
+2020-10-20 16:40:40,623 [http-nio-8001-exec-6] DEBUG insert - <==    Updates: 1
+2020-10-20 16:40:40,624 [http-nio-8001-exec-6] DEBUG insert - ==>  Preparing: INSERT INTO red_detail ( red_record_id, amount, create_time ) VALUES ( ?, ?, ? ) 
+2020-10-20 16:40:40,625 [http-nio-8001-exec-6] DEBUG insert - ==> Parameters: 3(Integer), 27(BigDecimal), 2020-10-20 16:40:40.624(Timestamp)
+2020-10-20 16:40:40,626 [http-nio-8001-exec-6] DEBUG insert - <==    Updates: 1
+2020-10-20 16:40:40,626 [http-nio-8001-exec-6] DEBUG insert - ==>  Preparing: INSERT INTO red_detail ( red_record_id, amount, create_time ) VALUES ( ?, ?, ? ) 
+2020-10-20 16:40:40,627 [http-nio-8001-exec-6] DEBUG insert - ==> Parameters: 3(Integer), 15(BigDecimal), 2020-10-20 16:40:40.626(Timestamp)
+2020-10-20 16:40:40,628 [http-nio-8001-exec-6] DEBUG insert - <==    Updates: 1
+2020-10-20 16:40:40,629 [http-nio-8001-exec-6] DEBUG insert - ==>  Preparing: INSERT INTO red_detail ( red_record_id, amount, create_time ) VALUES ( ?, ?, ? ) 
+2020-10-20 16:40:40,630 [http-nio-8001-exec-6] DEBUG insert - ==> Parameters: 3(Integer), 26(BigDecimal), 2020-10-20 16:40:40.629(Timestamp)
+2020-10-20 16:40:40,631 [http-nio-8001-exec-6] DEBUG insert - <==    Updates: 1
+2020-10-20 16:40:40,632 [http-nio-8001-exec-6] DEBUG insert - ==>  Preparing: INSERT INTO red_detail ( red_record_id, amount, create_time ) VALUES ( ?, ?, ? ) 
+2020-10-20 16:40:40,632 [http-nio-8001-exec-6] DEBUG insert - ==> Parameters: 3(Integer), 11(BigDecimal), 2020-10-20 16:40:40.632(Timestamp)
+2020-10-20 16:40:40,634 [http-nio-8001-exec-6] DEBUG insert - <==    Updates: 1
+2020-10-20 16:40:58,287 [http-nio-8001-exec-7] INFO RedPacketServiceImpl - click redpacketId : redis:red:packet:1:318571459405100
+2020-10-20 16:40:58,300 [http-nio-8001-exec-7] DEBUG insert - ==>  Preparing: INSERT INTO red_rob_record ( user_id, red_packet_id, amount, rob_time ) VALUES ( ?, ?, ?, ? ) 
+2020-10-20 16:40:58,300 [http-nio-8001-exec-7] DEBUG insert - ==> Parameters: 1(Integer), redis:red:packet:1:318571459405100(String), 0.21(BigDecimal), 2020-10-20 16:40:58.296(Timestamp)
+2020-10-20 16:40:58,303 [http-nio-8001-exec-7] DEBUG insert - <==    Updates: 1
+2020-10-20 16:40:58,308 [http-nio-8001-exec-7] INFO RedPacketServiceImpl - 抢到红包啦红包金额为：userId: 1, amount: 0.21
+2020-10-20 16:42:02,136 [http-nio-8001-exec-2] INFO RedPacketServiceImpl - click redpacketId : redis:red:packet:1:318571459405100
+2020-10-20 16:42:02,141 [http-nio-8001-exec-2] DEBUG insert - ==>  Preparing: INSERT INTO red_rob_record ( user_id, red_packet_id, amount, rob_time ) VALUES ( ?, ?, ?, ? ) 
+2020-10-20 16:42:02,142 [http-nio-8001-exec-2] DEBUG insert - ==> Parameters: 2(Integer), redis:red:packet:1:318571459405100(String), 0.27(BigDecimal), 2020-10-20 16:42:02.141(Timestamp)
+2020-10-20 16:42:02,144 [http-nio-8001-exec-2] DEBUG insert - <==    Updates: 1
+2020-10-20 16:42:02,145 [http-nio-8001-exec-2] INFO RedPacketServiceImpl - 抢到红包啦红包金额为：userId: 2, amount: 0.27
+2020-10-20 16:44:28,146 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 2688 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-20 16:44:28,148 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-20 16:44:28,149 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-20 16:44:28,582 [main] INFO RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-20 16:44:28,584 [main] INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-20 16:44:28,604 [main] INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-10-20 16:44:28,957 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-20 16:44:29,037 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 847 ms
+2020-10-20 16:44:30,538 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-20 16:44:30,729 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
+2020-10-20 16:44:30,736 [main] INFO MainApplication - Started MainApplication in 2.893 seconds (JVM running for 4.03)
+2020-10-20 16:44:34,964 [http-nio-8001-exec-3] INFO DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-20 16:44:34,968 [http-nio-8001-exec-3] INFO DispatcherServlet - Completed initialization in 4 ms
+2020-10-20 16:45:23,533 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 16668 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-20 16:45:23,535 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-20 16:45:23,535 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-20 16:45:23,961 [main] INFO RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-20 16:45:23,963 [main] INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-20 16:45:23,983 [main] INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-10-20 16:45:24,334 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-20 16:45:24,413 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 836 ms
+2020-10-20 16:45:25,853 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-20 16:45:26,053 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
+2020-10-20 16:45:26,060 [main] INFO MainApplication - Started MainApplication in 2.808 seconds (JVM running for 3.942)
+2020-10-20 16:45:28,212 [http-nio-8001-exec-2] INFO DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-20 16:45:28,216 [http-nio-8001-exec-2] INFO DispatcherServlet - Completed initialization in 4 ms
+2020-10-20 16:45:28,239 [http-nio-8001-exec-2] INFO RedPacketController - 接受参数为：userId:1, redPacketId: redis:red:packet:1:318571459405100
+2020-10-20 16:46:24,195 [main] INFO MainApplication - Starting MainApplication on DESKTOP-HE3N4PT with PID 25812 (E:\Java\middleware\server\target\classes started by Puppy_x in E:\Java\middleware)
+2020-10-20 16:46:24,198 [main] DEBUG MainApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-20 16:46:24,198 [main] INFO MainApplication - No active profile set, falling back to default profiles: default
+2020-10-20 16:46:24,617 [main] INFO RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-20 16:46:24,618 [main] INFO RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-20 16:46:24,639 [main] INFO RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-10-20 16:46:24,977 [main] INFO TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-20 16:46:25,056 [main] INFO ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 819 ms
+2020-10-20 16:46:26,495 [main] INFO ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-20 16:46:26,696 [main] INFO TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path '/middleware'
+2020-10-20 16:46:26,703 [main] INFO MainApplication - Started MainApplication in 2.796 seconds (JVM running for 3.942)
+2020-10-20 16:46:29,847 [http-nio-8001-exec-1] INFO DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-20 16:46:29,852 [http-nio-8001-exec-1] INFO DispatcherServlet - Completed initialization in 5 ms
+2020-10-20 16:46:29,873 [http-nio-8001-exec-1] INFO RedPacketController - 接受参数为：userId:1, redPacketId: redis:red:packet:1:318571459405100
+2020-10-20 16:46:30,895 [http-nio-8001-exec-1] INFO RedPacketServiceImpl - 该用户1已经抢过了，直接显示出来
+2020-10-20 16:46:37,428 [http-nio-8001-exec-2] INFO RedPacketController - 接受参数为：userId:2, redPacketId: redis:red:packet:1:318571459405100
+2020-10-20 16:46:37,430 [http-nio-8001-exec-2] INFO RedPacketServiceImpl - 该用户2已经抢过了，直接显示出来
+2020-10-20 16:46:41,458 [http-nio-8001-exec-4] INFO RedPacketController - 接受参数为：userId:3, redPacketId: redis:red:packet:1:318571459405100
+2020-10-20 16:46:41,459 [http-nio-8001-exec-4] INFO RedPacketServiceImpl - click redpacketId : redis:red:packet:1:318571459405100
+2020-10-20 16:46:41,628 [http-nio-8001-exec-4] DEBUG insert - ==>  Preparing: INSERT INTO red_rob_record ( user_id, red_packet_id, amount, rob_time ) VALUES ( ?, ?, ?, ? ) 
+2020-10-20 16:46:41,640 [http-nio-8001-exec-4] DEBUG insert - ==> Parameters: 3(Integer), redis:red:packet:1:318571459405100(String), 0.15(BigDecimal), 2020-10-20 16:46:41.468(Timestamp)
+2020-10-20 16:46:41,642 [http-nio-8001-exec-4] DEBUG insert - <==    Updates: 1
+2020-10-20 16:46:41,650 [http-nio-8001-exec-4] INFO RedPacketServiceImpl - 抢到红包啦红包：userId: 3, amount: 0.15
+2020-10-20 16:46:47,247 [http-nio-8001-exec-5] INFO RedPacketController - 接受参数为：userId:4, redPacketId: redis:red:packet:1:318571459405100
+2020-10-20 16:46:47,249 [http-nio-8001-exec-5] INFO RedPacketServiceImpl - click redpacketId : redis:red:packet:1:318571459405100
+2020-10-20 16:46:47,254 [http-nio-8001-exec-5] DEBUG insert - ==>  Preparing: INSERT INTO red_rob_record ( user_id, red_packet_id, amount, rob_time ) VALUES ( ?, ?, ?, ? ) 
+2020-10-20 16:46:47,255 [http-nio-8001-exec-5] DEBUG insert - ==> Parameters: 4(Integer), redis:red:packet:1:318571459405100(String), 0.26(BigDecimal), 2020-10-20 16:46:47.253(Timestamp)
+2020-10-20 16:46:47,256 [http-nio-8001-exec-5] DEBUG insert - <==    Updates: 1
+2020-10-20 16:46:47,258 [http-nio-8001-exec-5] INFO RedPacketServiceImpl - 抢到红包啦红包：userId: 4, amount: 0.26
+2020-10-20 16:46:50,376 [http-nio-8001-exec-6] INFO RedPacketController - 接受参数为：userId:5, redPacketId: redis:red:packet:1:318571459405100
+2020-10-20 16:46:50,380 [http-nio-8001-exec-6] INFO RedPacketServiceImpl - click redpacketId : redis:red:packet:1:318571459405100
+2020-10-20 16:46:50,385 [http-nio-8001-exec-6] DEBUG insert - ==>  Preparing: INSERT INTO red_rob_record ( user_id, red_packet_id, amount, rob_time ) VALUES ( ?, ?, ?, ? ) 
+2020-10-20 16:46:50,386 [http-nio-8001-exec-6] DEBUG insert - ==> Parameters: 5(Integer), redis:red:packet:1:318571459405100(String), 0.11(BigDecimal), 2020-10-20 16:46:50.384(Timestamp)
+2020-10-20 16:46:50,388 [http-nio-8001-exec-6] DEBUG insert - <==    Updates: 1
+2020-10-20 16:46:50,389 [http-nio-8001-exec-6] INFO RedPacketServiceImpl - 抢到红包啦红包：userId: 5, amount: 0.11
+2020-10-20 16:46:54,027 [http-nio-8001-exec-7] INFO RedPacketController - 接受参数为：userId:6, redPacketId: redis:red:packet:1:318571459405100
+2020-10-20 16:46:54,028 [http-nio-8001-exec-7] INFO RedPacketServiceImpl - click redpacketId : redis:red:packet:1:318571459405100

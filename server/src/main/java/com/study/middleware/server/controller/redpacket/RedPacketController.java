@@ -14,12 +14,10 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.MediaType;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -54,6 +52,24 @@ public class RedPacketController {
         } catch (Exception e) {
             log.error("发红包异常 redPacketDto : {}", redPacketDto, e.fillInStackTrace());
             return new R(StatusCode.Fail);
+        }
+    }
+
+    @GetMapping("rob")
+    public R rob(Integer userId, String redPacketId) {
+        try{
+            log.info("接受参数为：userId:{}, redPacketId: {}", userId, redPacketId);
+            BigDecimal result = redPacketService.rob(userId, redPacketId);
+            if (result != null) {
+                // 说明抢到了红包，返回给前端,这里为了前端方便，直接将单位转换为元
+                return new R(result);
+            } else {
+                return new R(StatusCode.Fail.getCode(), "红包已被抢完");
+            }
+        } catch (Exception e) {
+            // 如果发生异常
+            log.info("抢红包发生异常：userId:{}, redPacketId: {}", userId, redPacketId, e.fillInStackTrace());
+            return new R(StatusCode.Fail.getCode(), e.getMessage());
         }
     }
 }
